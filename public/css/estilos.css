@@ -1,0 +1,134 @@
+body{
+    background-color: #1E1E1E;
+    color: wheat;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+.header{
+    width: 100%;
+    border: 1px solid white;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: wheat;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.lista li a{
+    text-decoration: none;
+    color: #1E1E1E;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.lista li a:hover{
+    background-color: burlywood;
+}
+
+li{
+    list-style: none;
+}
+
+
+
+/*------------> aca empiezan los otros pug <---------------*/
+
+.enunciado{
+    text-align: center;
+    font-size: 25px;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.cont-generalA{
+    display: flex;
+    justify-content: center;
+}
+
+.busqueda{
+    width: 25%;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.listado{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#lista-libros {
+    display: flex;
+    flex-direction: column; 
+    text-align: left; 
+}
+
+.cont-result {
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 0px;
+    gap: 10px;
+}
+
+.subTitulo{
+    font-size: 30px;
+    color: brown;
+    font-style: italic;
+}
+
+/*------------------- autores ---------------------------*/
+
+#lista-autores{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.grilla-autores img{
+    max-height: 500px;
+    max-width: 500px;
+}
+
+/* ----------------------- Consulta c ---------------------------- */
+
+.cont-cc{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.cont-cc h4{
+    color: brown;
+}
+.cont-cc p{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+/*------------------------- CONSULTA 4 ---------------------*/
+
+.cont-biblio a{
+    text-decoration: none;
+    color: wheat;
+    margin-bottom: 5px;
+    font-style: unset;
+
+}
+.cont-biblio a:hover{
+    cursor: pointer;
+    color: rgb(245, 206, 133);
+}

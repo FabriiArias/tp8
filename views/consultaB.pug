@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Consulta B
+        link(rel="stylesheet", href="css/estilos.css")
+        script(src="/js/consultaB.js")
+    body 
+        h1 Consulta B
+        .header 
+            .menu
+                ul.lista
+                    li
+                        a(href="/") Home
+                    li
+                        a(href="/consultaA") Consulta A
+                    li
+                        a(href="/consultaB") Consulta B
+                    li
+                        a(href="/consultaC") Consulta C
+                    li 
+                        a(href="/consultaD") Consulta D
+        p.enunciado  
+            |  Realice una página que liste las fotos de todos los autores de un libro X
+        .cont-generalA
+            .busqueda
+                select#select-libros
+                button(onclick="buscar()") Buscar
+        .listado 
+            #lista-autores
+        

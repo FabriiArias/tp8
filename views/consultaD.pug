@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Consulta D
+        link(rel="stylesheet", href="css/estilos.css")
+        script(src="/js/consultaD.js")
+    body 
+        h1 Consulta D
+        .header 
+            .menu
+                ul.lista
+                    li
+                        a(href="/") Home
+                    li
+                        a(href="/consultaA") Consulta A
+                    li
+                        a(href="/consultaB") Consulta B
+                    li
+                        a(href="/consultaC") Consulta C
+                    li 
+                        a(href="/consultaD") Consulta D
+        p.enunciado  
+            | Realice una página que liste todos los autores que tienen una participación mayor al 
+            | 50% de los libros de genero X. Los datos de cada autor deben ser enlaces que nos lleven 
+            | a mostrar una biografía del autor (datos y detalle de los libros que escribió) 
+        .cont-generalA
+            .busqueda
+                select#select-generos
+                button(onclick="buscar()") Buscar
+        .listado 
+            #lista-generos
+        
